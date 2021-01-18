@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid cases</title>
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid">
+
+    <!-- Navbar -->
+        <nav class="navbar navbar-light fixed-top py-3 " style="background-color:black;">
+            <div id="logo">
+                <a href="#">COVID CASES</a>
+            </div>
+        
+        </nav>
+
+        <!-- Global Data -->
+        <div class="row mt-dash">
+
+            <div class=" card  mt-2 "  style="height: 100%; width: 220px;">
+                <div class="mb-3" style="background-color: darkcyan; color: white; height: 35px;">
+                    <h4 class="text-center">Global Data</h4>
+                </div>
+                    <div id="Display_global">
+                        <div><h6>New Confirmed : <span id="NC" style="color: rgb(240, 217, 9);"></span></h6></div>
+                        <div><h6>New Deaths :  <span id="ND" style="color: red ;"></span></h6></div>
+                        <div><h6>New Recoveries :  <span id="NR" style="color: green ;"></span></h6></div>
+                        <div><h6>Total Confirmed :  <span id="TC" style="color:rgb(240, 217, 9) ;"></span></h6></div>
+                        <div><h6>Total Deaths :  <span id="TD" style="color:red ;"></span></h6></div>
+                        <div><h6>Total Recoveries :  <span id="TR" style="color: green;"></span></h6></div>
+                    </div>
+            </div>
+
+            <!-- Filter data -->
+            <div class="col-lg-10 card  mt-2"  style="height: 100%;">
+                <div class="card">
+                    <div style="background-color: darkcyan; color: white; height: 35px;">
+                        <h4 class="mb-3 text-center">Filter By Country</h4>
+                    </div>
+                    <center>
+                        <form class="m-2">
+                            <div>
+                                Enter Country:
+                                <input type="text" placeholder="Country's Name" name="country-Name">
+                                <input type="submit" class="btn-primary" value="Search">
+                                <p style="color: red;">*Kindly put first letter capital</p>
+                            </div> 
+                        </form>
+                        <div id="Display-filter">
+                            <div class="bg-primary text-white"><h5 >Country</h5></div>
+                            <div class="bg-warning text-white"><h5>New Confirmed</h5></div>
+                            <div class="bg-danger text-white"><h5>New Deaths</h5></div>
+                            <div class="bg-success text-white"><h5>New Recoveries</h5></div>
+                            <div class="bg-warning text-white"><h5>Total Confirmed</h5></div>
+                            <div class="bg-danger text-white"><h5>Total Deaths</h5></div>
+                            <div class="bg-success text-white"><h5>Total Recoveries</h5></div>
+                        </div>
+                        <div id="Display-filter-Data"></div>
+                    </center>
+                </div>
+
+                <!--Country wise Data List  -->
+                <div style="background-color: darkcyan; color: white; height: 35px;">
+                    <h4 class="mb-3 text-center">Country Wise Data</h4>
+                </div>
+                <div id="Display" class="mt-2">
+                    <div class="bg-primary text-white"><h5 >Country</h5></div>
+                            <div class="bg-warning text-white"><h5>New Confirmed</h5></div>
+                            <div class="bg-danger text-white"><h5>New Deaths</h5></div>
+                            <div class="bg-success text-white"><h5>New Recoveries</h5></div>
+                            <div class="bg-warning text-white"><h5>Total Confirmed</h5></div>
+                            <div class="bg-danger text-white"><h5>Total Deaths</h5></div>
+                            <div class="bg-success text-white"><h5>Total Recoveries</h5></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- Local JS file -->
+    <script type="text/javascript" src="index.js"></script>
+
+    <!-- Boootstrap Links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

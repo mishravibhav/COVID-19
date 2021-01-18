@@ -1,0 +1,58 @@
+#logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100px;
+    font-size: 20px;
+  }
+  nav button{ border: 0px;
+     border-radius: 5px;
+     padding: 5px;
+     color: white; 
+     background-color: red;
+      }
+#Display{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    border: 1px solid black;
+}
+#Display div{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#Display-filter{
+    display: grid;
+    grid-template-columns: 156px 156px 156px 156px 156px 156px 156px;
+}
+#Display-filter div{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#Display-filter-Data{
+    display: grid;
+    grid-template-columns: 156px 156px 156px 156px 156px 156px 156px;
+    
+    margin-bottom: 10px;
+}
+#Display-filter-Data div{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.mt-dash{
+    margin-top: 6%;
+}
+
+.mt-6{
+    margin-top: 8%;
+}
+  
+  .mt-dash{
+    margin-top: 6%;
+}
+  
+  .m-l-r-1{
+    margin-left: 25%;
+    margin-right: 25%;
+}
