@@ -1,108 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Covid-19</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-</head>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+
 <body class="bg-light">
     <div class="container-fluid">
 
-        
-            <div class="col-lg-12 card  mt-2"  style="height: 100%;">
 
-                        <div class="row my-3">
-                            
+        <div class="col-lg-12 card  mt-2" style="height: 100%;">
 
-                            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
-                                <div class="card " style="border-top:8px solid green">
-                                    <div class="card-body">
-                                        <h6 class="text-muted">New Recoveries</h6>
-                                        <h4 id="Newrecoveries" class="text-success"> + 0</h4>
-                                    </div>
-                                </div>
-                
-                            </div>
+            <div class="row my-3">
 
-                            <div class="col-lg-4 col-md-4 col-sm-12 mt-3 ">
-                                <div class="card " style="border-top:8px solid rgb(169, 206, 3)">
-                                    <div class="card-body">
-                                        <h6 class="text-muted">New Confirmed</h6>
-                                        <h4 id="Newcnf" class="text-warning"> + 0</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
-                                <div class="card " style="border-top:8px solid red">
-                                    <div class="card-body">
-                                        <h6 class="text-muted">New Deaths </h6>
-                                        <h4 id="Newdeath" class="text-danger"> + 0</h4>
-                                    </div>
-                                </div>
-                            </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+                    <div class="card " style="border-top:8px solid green">
+                        <div class="card-body">
+                            <h6 class="text-muted">New Recoveries</h6>
+                            <h4 id="Newrecoveries" class="text-success"> + 0</h4>
                         </div>
-                        
-                        <div class="row">
+                    </div>
 
-                            <!-- Transaction Input -->
+                </div>
 
-                            <div class="col-lg-7">
-                                <div class="card  mb-5">
-                                    <div style="background-color: darkcyan; color: white; height: 35px;">
-                                        <h4 class="mb-3 text-center">Country Wise Data</h4>
-                                    </div>
-                                    <center>
-                                        <form >
-                                            <div class="mt-2">
-                                                <select id="Selectbox" class="p-1">
-                                                    <option value="All">All</option>
-                                                </select>
-                                            <input type="submit" class="btn btn-primary " value="Filter" >
-                                            </div>
-                                        </form>
-                                    </center>
-
-                                    <div id="Display"></div>
-
-                                </div>
-                            </div>
-
-                            <!-- Last five transation -->
-                            <div class="col-lg-5">
-                                <div class="card">
-                                    <div style="background-color: darkcyan; color: white; height: 35px;">
-                                        <h4 class="mb-3 text-center">INDIA</h4>
-                                    </div>
-                                    <div  class="mb-5">
-                                        <canvas id="India"></canvas>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div style="background-color: darkcyan; color: white; height: 35px;">
-                                        <h4 class="mb-3 text-center">GLOBAL</h4>
-                                    </div>
-                                    <div  class="mb-5">
-                                        <canvas id="Global"></canvas>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            
+                <div class="col-lg-4 col-md-4 col-sm-12 mt-3 ">
+                    <div class="card " style="border-top:8px solid rgb(169, 206, 3)">
+                        <div class="card-body">
+                            <h6 class="text-muted">New Confirmed</h6>
+                            <h4 id="Newcnf" class="text-warning"> + 0</h4>
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+                    <div class="card " style="border-top:8px solid red">
+                        <div class="card-body">
+                            <h6 class="text-muted">New Deaths </h6>
+                            <h4 id="Newdeath" class="text-danger"> + 0</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="row">
+
+                <!--  -->
+
+                <div class="col-lg-7">
+                    <div class="card  mb-5">
+                        <div style="background-color: darkcyan; color: white; height: 35px;">
+                            <h4 class="mb-3 text-center">Country Wise Data</h4>
+                        </div>
+                        <center>
+                            <form>
+                                <div class="mt-2">
+                                    <select id="Selectbox" class="p-1">
+                                        <option value="All">All</option>
+                                    </select>
+                                    <input type="submit" class="btn btn-primary " value="Filter">
+                                </div>
+                            </form>
+                        </center>
+
+                        <div id="Display" class="text-center" style="display: grid;grid-template-columns: auto auto auto auto auto auto auto ;grid-row: auto;">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Last five transation -->
+                <div class="col-lg-5">
+                    <div class="card">
+                        <div style="background-color: darkcyan; color: white; height: 35px;">
+                            <h4 class="mb-3 text-center">INDIA</h4>
+                        </div>
+                        <div class="mb-5">
+                            <canvas id="India"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div style="background-color: darkcyan; color: white; height: 35px;">
+                            <h4 class="mb-3 text-center">GLOBAL</h4>
+                        </div>
+                        <div class="mb-5">
+                            <canvas id="Global"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </div>
-    
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script type="text/javascript" src="index.js"></script>
     <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
