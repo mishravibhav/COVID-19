@@ -1,4 +1,6 @@
 window.onload = () => {
+    var form = document.querySelector('form')
+    form.addEventListener('submit',FilterData)
     var xhr = new XMLHttpRequest()
     xhr.open("GET", "https://api.covid19api.com/summary")
     xhr.setRequestHeader('Content-Type', 'application/json', 'charset=utf-8')
@@ -10,6 +12,11 @@ window.onload = () => {
         IndiaChart(data)
     }
 
+}
+
+function FilterData(){
+    event.preventDefault()
+    alert("Working")
 }
 
 function FetchData(data) {
