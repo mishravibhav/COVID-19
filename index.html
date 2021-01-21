@@ -3,93 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid cases</title>
-    <!-- Bootstrap stylesheet -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- Local Stylesheet -->
+    <title>Covid-19</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
-<body class="bg-light">
-    <div class="container-fluid">
-
-    <!-- Navbar -->
-        <nav class="navbar navbar-light fixed-top py-3 " style="background-color:black;">
-            <div id="logo">
-                <a href="#">COVID CASES</a>
-            </div>
-        
-        </nav>
-
-        <!-- Global Data -->
-        <div class="row mt-dash">
-
-            <div class=" card  mt-2 "  style="height: 100%; width: 220px;">
-                <div class="mb-3" style="background-color: darkcyan; color: white; height: 35px;">
-                    <h4 class="text-center">Global Data</h4>
-                </div>
-                    <div id="Display_global">
-                        <div><h6>New Confirmed : <span id="NC" style="color: rgb(240, 217, 9);"></span></h6></div>
-                        <div><h6>New Deaths :  <span id="ND" style="color: red ;"></span></h6></div>
-                        <div><h6>New Recoveries :  <span id="NR" style="color: green ;"></span></h6></div>
-                        <div><h6>Total Confirmed :  <span id="TC" style="color:rgb(240, 217, 9) ;"></span></h6></div>
-                        <div><h6>Total Deaths :  <span id="TD" style="color:red ;"></span></h6></div>
-                        <div><h6>Total Recoveries :  <span id="TR" style="color: green;"></span></h6></div>
+<body>
+    <div  class="container-fluid border border-primary">
+        <div class="row ">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 global_data  col-sm-12 m-2 ms-3 p-3 border border-primary" >
+                        <h6>New Recovered</h6>
+                        <p id="New_rec"></p>
                     </div>
-            </div>
-
-            <!-- Filter data -->
-            <div class="col-lg-10 card  mt-2"  style="height: 100%;">
-                <div class="card">
-                    <div style="background-color: darkcyan; color: white; height: 35px;">
-                        <h4 class="mb-3 text-center">Filter By Country</h4>
+                    <div class="col-lg-4 col-md-3 global_data  col-sm-12 m-2 ms-3 p-3 border border-primary">
+                        <h6>New Case</h6>
+                        <p id="new_case"></p>
                     </div>
-                    <center>
-                        <form class="m-2">
-                            <div>
-                                Enter Country:
-                                <input type="text" placeholder="Country's Name" name="country-Name">
-                                <input type="submit" class="btn-primary" value="Search">
-                                <p style="color: red;">*Kindly put first letter capital</p>
-                            </div> 
-                        </form>
-                        <div id="Display-filter">
-                            <div class="bg-primary text-white"><h5 >Country</h5></div>
-                            <div class="bg-warning text-white"><h5>New Confirmed</h5></div>
-                            <div class="bg-danger text-white"><h5>New Deaths</h5></div>
-                            <div class="bg-success text-white"><h5>New Recoveries</h5></div>
-                            <div class="bg-warning text-white"><h5>Total Confirmed</h5></div>
-                            <div class="bg-danger text-white"><h5>Total Deaths</h5></div>
-                            <div class="bg-success text-white"><h5>Total Recoveries</h5></div>
+                    <div class="col-lg-4 col-md-3 global_data  col-sm-12 m-2 ms-3 p-3 border border-primary">
+                        <h6>New Death</h6>
+                        <p id="New_death"></p>
+                    </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-6 col-sm-12 m-2 ms-3 p-3 border border-primary">
+                                vibhav
+                            </div>
                         </div>
-                        <div id="Display-filter-Data"></div>
-                    </center>
-                </div>
-
-                <!--Country wise Data List  -->
-                <div style="background-color: darkcyan; color: white; height: 35px;">
-                    <h4 class="mb-3 text-center">Country Wise Data</h4>
-                </div>
-                <div id="Display" class="mt-2">
-                    <div class="bg-primary text-white"><h5 >Country</h5></div>
-                            <div class="bg-warning text-white"><h5>New Confirmed</h5></div>
-                            <div class="bg-danger text-white"><h5>New Deaths</h5></div>
-                            <div class="bg-success text-white"><h5>New Recoveries</h5></div>
-                            <div class="bg-warning text-white"><h5>Total Confirmed</h5></div>
-                            <div class="bg-danger text-white"><h5>Total Deaths</h5></div>
-                            <div class="bg-success text-white"><h5>Total Recoveries</h5></div>
                 </div>
             </div>
+
+            
+
+            <div class="col-lg-4 col-md-10  col-sm-12 m-2 ms-3 p-3 border border-primary" id="All_country">
+                <p>vibhav</p>
+                <p>vibhav</p>
+                <p>vibhav</p>
+                <p>vibhav</p>
+                <p>vibhav</p>
+                <p>vibhav</p>
+                <p>vibhav</p>
+                <p>vibhav</p>
+                <p>vibhav</p>
+            </div>
+
+            
+    
         </div>
+        
     </div>
 
-
-    
-    <!-- Local JS file -->
-    <script type="text/javascript" src="index.js"></script>
-
-    <!-- Boootstrap Links -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
 </html>
