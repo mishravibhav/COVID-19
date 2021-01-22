@@ -19,7 +19,7 @@ function FilterData() {
     event.preventDefault()
     var form = new FormData(event.target)
     var name = form.get("Selectbox")
-    console.log(name)
+    // console.log(name)
 
     var display = document.getElementById('Display')
     display.innerHTML = ""
@@ -78,7 +78,7 @@ function FilterData() {
             for (var i = 0; i < Countries.length; i++) {
                 if (Countries[i].Country === name) {
         
-                    console.log(Countries)
+                    // console.log(Countries)
         
                     var div1 = document.createElement('div')
                     div1.innerHTML = Countries[i].Country
@@ -202,15 +202,11 @@ function FetchData(data) {
 
 }
 
-function HandleData() {
-    console.log("HandleData" + JSON.parse(this))
-}
-
 function IndiaChart(data) {
 
     var data = JSON.parse(data)
     var Countries = data.Countries
-    console.log(Countries)
+    // console.log(Countries)
 
     for (var i = 0; i < Countries.length; i++) {
         if (Countries[i].CountryCode == "IN") {
@@ -248,7 +244,7 @@ function GlobalChart(data) {
     var Case = data.Global.TotalConfirmed
     var Deaths = data.Global.TotalDeaths
 
-    console.log(Recovered, Case, Deaths)
+    // console.log(Recovered, Case, Deaths)
 
 
 
