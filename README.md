@@ -1,5 +1,7 @@
 # COVID-19
 
+This application is fetching JSON data from an API and representing them in an organised manner and its  fully Responsive
+
 * This Application is fully Responsive *
 
 # Block_Data
